@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TP 3 Bis</string>
+    <string name="activity2_name">Seconde Activité</string>
+    <string name="button_main">Send</string>
+    <string name="text_header">Message reçu</string>
+    <string name="editText_main">Entrez votre message ici</string>
+</resources>
