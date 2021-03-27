@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, SecondActivity.class);
         String msg = msgTxt.getText().toString();
         i.putExtra("lfig3", msg);
-        startActivityForResult(i, 3);
+        startActivityForResult(i, 24333);
 
     }
 
@@ -38,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent i) {
         super.onActivityResult(requestCode, resultCode, i);
 
-        if (requestCode == 3) {
+        if (requestCode == 24333) {
             if (resultCode == RESULT_OK) {
                 String reply = i.getStringExtra("lfigRep");
                 reponseMsg.setVisibility(View.VISIBLE);
                 reponseMsg.setText(reply);
-            } else {
+            } else { //resultCode == RESULT_CANCELED
                 Toast.makeText(getApplicationContext(), "Chaine vide", Toast.LENGTH_LONG).show();
             }
         }

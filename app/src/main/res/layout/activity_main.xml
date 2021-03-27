@@ -33,8 +33,9 @@
         android:id="@+id/sendBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFEB3B"
         android:onClick="LaunchActivity"
         android:text="@string/button_main" />
 
